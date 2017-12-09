@@ -1,0 +1,156 @@
+.contact-form {
+    width: 33.5rem;
+    margin-top: 2.5rem;
+}
+.contact-form-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.contact-form-row .input-wrapper {
+    max-width: 47%;
+}
+.components-container .contact-form .form-control:focus {
+    box-shadow: none!important;
+}
+.contact-form-row p {
+    font-size: 0.9rem;
+    color: rgb(151,35,25);
+    margin: 0;
+    padding: 0;
+}
+.contact-form-row textarea {
+    color: rgb(98,98,116);
+}
+.contact-form-row div {
+    width: 100%;
+}
+.contact-submit-button {
+    background-color: rgb(151,35,25);
+    border-color: rgb(151,35,25);
+    font-size: 0.75rem;
+    font-weight: 400;
+    padding: .8rem 1rem;
+}
+
+.contact-fader {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.4);
+    z-index: 17;
+}
+
+.alert {
+    font-size: .8rem;
+    margin-bottom: 0;
+}
+.alert-dismissible .close {
+    outline: none;
+    position: relative;
+    top: -5px;
+    right: 0;
+    padding: 0 0 .75rem 1.25rem;
+    color: inherit;
+}
+.progress-bar-styles {
+    width: 100%;
+    height: 7px;
+    margin-top: .75rem;
+}
+.progress-bar-styles div.success {
+    background-color: #5cb85c;
+}
+.progress-bar-styles div.danger {
+    background-color: #d9534f;
+}
+
+.anim-progress {
+    animation: anim-progress 5s linear forwards 1;
+}
+@keyframes anim-progress {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+/*
+** Media Queries
+*/
+@media screen and (max-width: 767px) {
+    .contact-form {
+        width: 85%;
+        margin-top: 1.5rem;
+    }
+    .form-control {
+        font-size: 0.8rem;
+    }
+    .contact-form-row {
+        margin-bottom: 1.6rem;
+    }
+    .contact-form-row p {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 575px) {
+    .contact-form-row {
+        flex-flow: column nowrap;
+        margin: 0;
+    }
+    .contact-form-row:last-of-type {
+        margin-bottom: 1.5rem;
+    }
+    .contact-form-row .form-control-input {
+        max-width: none;
+    }
+    .contact-form-row .input-wrapper {
+        margin-bottom: 1.5rem;
+        max-width: none;
+    }
+}
+
+.alert-enter {
+    opacity: 0.01;
+}
+
+.alert-enter-active {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.alert-leave {
+    opacity: 1;
+}
+
+.alert-leave-active {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.fade-leave {
+    opacity: 1;
+}
+
+.fade-leave-active {
+    opacity: 0;
+    transition: opacity 300ms;
+}

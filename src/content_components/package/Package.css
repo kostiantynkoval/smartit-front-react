@@ -1,0 +1,58 @@
+/*
+** Media Queries
+*/
+@media screen and (max-width: 1199px) {
+    .package-main {
+
+    }
+    .package-main .package-left {
+        flex: 41;
+    }
+    .package-main .package-right {
+        flex: 59;
+    }
+}
+@media screen and (max-width: 991px) {
+    .package-main {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .package-main .package-left {
+        order: 2;
+        margin-top: 1.5rem;
+    }
+    .package-main .package-right {
+        order: 1;
+        max-width: 53vw;
+    }
+}
+@media screen and (max-width: 575px) {
+    .component-title {
+        text-align: center;
+    }
+    .component-title h1{
+        font-size: 2rem;
+    }
+    .package-main .package-right {
+        max-width: 73vw;
+    }
+    .package-main .package-left .list-container h6 {
+        font-size: .9rem;
+    }
+    .package-main .package-left .list-container ul li {
+        font-size: .7rem;
+    }
+    .package-contact-section p {
+        font-size: 0.63rem;
+        margin-right: .3rem;
+    }
+}
+@media screen and (max-width: 349px) {
+    .package-contact-section button {
+        margin-left: 0!important;
+    }
+}
+/*
+** Package Animations
+*/
